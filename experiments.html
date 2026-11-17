@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Experiments</title>
+        <link rel="icon" href="assets/favicon.ico"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Experiments</h1>
+        </header>
+        <main>
+            <section>
+               
+                <h2>Template</h2>
+                <p>A template is on this page but is not displayed.</p>                
+                <template>
+                    <p>This content is inert until JavaScript uses it.</p>
+                </template>
+            </section>
+
+            <section>
+                <h2>Audio</h2>
+                <figure>
+                    <figcaption>Listen to sample audio:</figcaption>
+                    <audio controls>
+                        <source src="assets/test_audio.m4a" type="audio/mp4">
+                        Your browser does not support the audio element.
+                        <a href="assets/test_audio.m4a">Download audio</a>
+                    </audio>
+                    <a href="assets/test_audio.m4a">Download audio</a>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Video</h2>
+                <figure>
+                    <figcaption>Watch a short sample clip:</figcaption>
+
+                    <video controls width="250">
+                        <source src="assets/sample_video.mp4" type="video/mp4">
+
+                        Download the
+                        <a href="assets/sample_video.mp4">MP4</a>
+                        video.
+                    </video>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Canvas</h2>
+                <canvas id="demo" width="200" height="100">light green rectangle</canvas>
+                <script>
+                    const canvas = document.getElementById("demo");
+                    const box = canvas.getContext("2d");
+                    box.fillStyle = "lightgreen";
+                    box.fillRect(10, 10, 180, 80);
+                </script>
+            </section>
+
+        </main>
+    </body>
+</html>

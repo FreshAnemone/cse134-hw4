@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="assets/favicon.ico"/>
+        <link rel="stylesheet" href="style.css"/>
+        <meta charset="UTF-8">
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form No JS | Noah's Website</title>
+        
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">
+                    <img src="assets/nt.png" alt="Home" width="48" height="48">
+                </a>
+                <ul>
+                    <li><a href="form-no-js.html" aria-current="page">Form No JS</a></li>
+                    <li><a href="form-with-js.html">Form With JS</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="demos.html">Demos</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <h1>Contact Form No JS</h1>
+            
+            
+                
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Send me a Message</legend>
+
+                    <p>All fields are required.</p>
+                    <p>Names can be up to 100 characters, and
+                    comments must be (10 - 1,000) characters.</p>
+                    <p>A solid green outline means the input is valid. A red dashed outline means it needs fixing.</p>
+
+                    <form-field>
+                        <label for="name">Name (Required)</label><br>
+                        <input id="name" type="text" name="name" autocomplete="name" minlength="1" maxlength="100" required>
+                        <br>
+                    </form-field>
+
+                    <form-field>
+                        <label for="email">Email (Required)</label><br>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                        <br>
+                    </form-field>
+
+                    <form-field>
+                        <label for="comments">Comments (Required)</label><br>
+                        <textarea id="comments" name="comments" rows="5" minlength="10" maxlength="1000" required></textarea>
+                        <br>
+                    </form-field>
+
+                    <input type="hidden" name="possible_bot" value="true"/>
+                    
+                    <button type="submit">Send</button>
+
+                </fieldset>
+            </form>
+           
+
+ 
+        </main>
+        <footer>
+            <footer-text>
+                <p>Website made by Noah Terrell</p>
+                <p>nterrell@ucsd.edu</p>
+            </footer-text>
+    
+        
+
+        </footer>
+    </body>
+</html>

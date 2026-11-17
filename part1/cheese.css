@@ -1,0 +1,79 @@
+/* Noah Terrell: https://github.com/FreshAnemone/cse134-hw3 */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(207, 94, 14);
+    line-height: 1.5;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(253, 247, 191);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+blockquote{
+    border: ridge;
+    border-color: coral;
+    border-width: 0.5rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 1rem 1rem 1rem 2rem;
+    
+}
+
+.latin{
+    font-style: italic;
+}
+
+#warning{
+    background-color: rgb(243, 59, 59);
+    color: black;
+    border-radius: 3px;
+    padding: 1rem;
+    font-weight: bold;
+    
+}
+
+a:hover{
+    background-color: lightblue;
+    font-weight: bold;
+}
+a:focus{
+    color: indigo;
+    background-color: white;
+}
+
+input:focus{
+    background-color: gold;
+}
+
+button:focus{
+    background-color: rgb(4, 221, 4);
+}
+
+
+dt{
+    color: green;
+}
+
+dt{
+    color: black;
+    /*  This later value wins because CSS uses an algorithm to determine the correct 
+        values for the CSS properties. The fifth rule is "Order of appearence" that 
+        states that if there are properties that have competing values that are in the 
+        rules of matching selectors of equal specificity and scoping proximity then the 
+        last declaration in the style order is applied.  
+    */
+}
+
